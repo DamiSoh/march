@@ -5,33 +5,43 @@ package com.company.second;
 
 public class Super {
     public static void main(String[] args) {
-        ChildforSuper  childforSuper = new ChildforSuper();
-        childforSuper.method();
-        System.out.println("===================================");
-        childforSuper.printExe();
+        ChildforSuper  childforSuper = new ChildforSuper(1,2);
+//        childforSuper.method();
+//        System.out.println("===================================");
+//        childforSuper.printExe();
     }
 }
 
 class ChildforSuper extends ParentforSuper{
-    int x = 20;
-    void method(){
-        System.out.println("x: " + x);
-        System.out.println("this.x: " + this.x);
-        System.out.println("super.x: " + super.x);
-    }
+    int y;
+//    void method(){
+//        System.out.println("x: " + x);
+//        System.out.println("this.x: " + this.x);
+//        System.out.println("super.x: " + super.x);
+//    }
+//
+//    void printExe(){
+//        System.out.println("Child Print");
+//        super.printExe();
+//    }
 
-    void printExe(){
-        System.out.println("Child Print");
-        super.printExe();
-    }
 
+    public ChildforSuper(int x, int y) {
+        super();
+        this.y = y;
+    }
 }
 
 class ParentforSuper{
-    int x = 10;
+    int x;
 
-    void printExe(){
-        System.out.println("Parent Print");
+
+    public ParentforSuper() {
+        this.x = x;
     }
+
+//    void printExe(){
+//        System.out.println("Parent Print");
+//    }
 
 }

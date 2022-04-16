@@ -1,13 +1,20 @@
 package com.company.second;
 
-final class Final {
-    final static int a = 0;
-    static int b = 0;
+class Final {
+    final int a;
+    final int b;
+
+//    public Final(final int a, final int b) {
+//        this.a = a;
+//        this.b = b;
+//    }
+
+    // 매개변수에 final 붙이면 나중에 수정 못한다.
+    public Final(final int a, final int b){
+        this.a = a;
+        this.b = b;
+    }
 
     public static void main(String[] args) {
-//        Final.a = 1;
-        System.out.println(Final.a);
-        Final.b = 2;
-        System.out.println(Final.b);
     }
 }
