@@ -2,6 +2,8 @@ package com.company.third;
 
 // p. 426 throw 에러 발생시 컴파일 에러와 런타임 에러
 
+import java.util.StringJoiner;
+
 public class ThrowNewExceptionPrac {
     public static void main(String[] args) {
 //        throw new Exception(); //Unhandled Exception Error
@@ -16,5 +18,4 @@ public class ThrowNewExceptionPrac {
 
         throw new RuntimeException();
         }
-
 }

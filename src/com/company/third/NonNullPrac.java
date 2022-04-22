@@ -11,6 +11,7 @@ public class NonNullPrac {
         nonNullPrac.setName(a); // NullPointerException; 발생
     }
     String name;
+
 //    void setName(String name){
 //        if(name == null){
 //            throw new NullPointerException();
