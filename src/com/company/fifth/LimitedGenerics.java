@@ -37,6 +37,7 @@ class Fruits{
 
 // Apple 자손 클래스 - Fruits상속 Eatable구현
 class Apple extends Fruits implements Eatable{
+    @Override
     public String toString(){return "Apple";}
 }
 
