@@ -13,7 +13,7 @@ public class GenericMethodPrac {
     public <T> void method3(ArrayList<T> list){}
 
     public void method4(){
-//        <Student>method3();  // 에러 발생
+//        <Student7>method3();  // 에러 발생
         this.<Student>method4();
     }
 

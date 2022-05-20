@@ -16,6 +16,8 @@ public class StreamEx1 {
         studentStream
                 .sorted(Comparator.naturalOrder())
                 .forEach(System.out::println);
+
+//        System.out.println(studentStream.count());
     }
 }
 
